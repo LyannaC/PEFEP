@@ -1,0 +1,135 @@
+<head>
+
+  <!-- link da fonte usada "Signika"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+
+    <link rel = "stylesheet" href="tela-modulo.css">
+
+    <!-- titulo da guia -->
+    <title>PEFEP - Módulos</title>
+ 
+    </head>
+
+    <body>
+      <!-- inserindo a imagem de fundo e estabelecendo um tamanho pra ela -->
+        <div class="imgfundo">
+            <img src="fundo.jpeg" width="1350" height="auto">
+      </div>
+    
+      <!-- inserindo a imagem do logo e estabelecendo um tamanho pra ela -->
+      <div class="logo">
+            <img src = "logo.png" width="280" height="200">  
+      </div>
+
+<!-- Menu principal -->
+
+      <ul id="menuprincipal"> <!-- criando uma lista pro menu principal-->
+    <nav> <!-- iniciando uma seção com links de navegação -->
+
+      <!-- itens da lista -->
+  <li> <a href="https://www.youtube.com/">
+  <strong>Pagina Inicial</strong> </a></li>
+         
+  <li><a href="https://www.facebook.com/">
+  <strong>Módulos</strong> </a> </li>
+
+  <li><a href="https://www.twitter.com/">
+  <strong>Ajuda</strong> </a> </li>
+
+  <li><a href="https://www.google.com/">
+  <strong>Quem Somos</strong> </a> </li>
+
+  <li><a href="https://www.netflix.com/">
+  <strong>Apoiadores</strong> </a> </li>
+  
+      </ul>
+ </nav>
+
+        <h1> MÓDULOS</h1>  <!--Titulo-->
+
+        <!--checkbox para abrir e para fechar a aba de perfil -->
+        <input type="checkbox" id="menucheck">
+        <label for="menucheck" class="menu-btn"><span></span></label>
+        <label for="menucheck" class="close"></label>
+      
+         <!--iniciando a criação dos conteudos da aba de perfil-->
+    <div class="menulateral">
+          <h2>Meu Perfil </h2>
+          <img src="eu.png" id="flor" width="80px" height="80px">
+          <br><br>
+      
+     <fieldset>  <!--criando um quadro para colocar informações de forma mais organizada-->
+          <h3>Meu Progresso</h3>
+            
+          <div class="conteudos">  
+            <strong>Nivel Basico: </strong><br>  <!--checkbox's para marcar os conteudos ja estudados-->
+           <input type = "checkbox" name = "devweb" value = "c1"> conteudo 1 <br>
+           <input type = "checkbox" name = "devweb" value = "c2"> conteudo 2 <br>
+           <input type = "checkbox" name = "devweb" value = "c3"> conteudo 3 <br>
+           </div> <br>
+       
+           
+           <div class="conteudos">
+             <strong>Nivel Intermediário: </strong> <br>
+             <input type = "checkbox" name = "devweb" value = "c4"> conteudo 4 <br>
+             <input type = "checkbox" name = "devweb" value = "c5"> conteudo 5 <br>
+             <input type = "checkbox" name = "devweb" value = "c6"> conteudo 6 <br>
+           </div> <br> 
+ 
+           
+           <div class="conteudos">
+            <strong>Nivel Avançado: </strong>  <br>
+             <input type = "checkbox" name = "devweb" value = "c7"> conteudo 7 <br>
+             <input type = "checkbox" name = "devweb" value = "c8"> conteudo 8 <br>
+             <input type = "checkbox" name = "devweb" value = "c9"> conteudo 9 <br>
+           </div>
+
+           </fieldset> </div>
+      </body>
+
+
+     <div class="bloco">  <!--bloco onde será inserido os card-->
+
+        <a href="https://www.youtube.com/"> <!--link de redirecionamento ao clicar no card vermelho-->
+        <div class="card red">  <!--criação do card vermelho-->
+          <h3>Nivel Básico</h3> <!--titulo do card vermelho-->
+          <p>(Informaçoes)</p> <!--informações a respeito do card vermelho-->
+        <img class="medalhas" src="med1.png" id="bsc" width="56px" height="80px"/> <!--imagem usada para decorar o card vermelho-->
+        </div>
+    
+        <a href="https://www.facebook.com/">
+        <div class="card blue">
+          <h3>Nivel Intermediário</h3>
+          <p>(Informaçoes)</p>
+        <img class="medalhas" src="med2.png" id="inte" width="60px" height="80px"/>
+        </div>
+    
+        <a href="https://web.whatsapp.com/">
+        <div class="card green">
+          <h3>Nivel Avançado</h3> 
+          <p>(Informaçoes)</p>
+          <img class="medalhas" src="med3.png" alt="avçd" width="55px" height="80px"/>
+        </div>
+    
+        <a href="https://web.whatsapp.com/">
+          <div class="card black">
+            <h3>E-book</h3> 
+            <p>(Informaçoes)</p>
+            <img class="medalhas" src="ebook.png" alt="msc icon" width="55px" height="60px"/>
+          </div>
+    
+          <a href="https://web.whatsapp.com/">
+            <div class="card grey">
+              <h3>Podcast</h3> 
+              <p>(Informaçoes)</p>
+              <img class="medalhas" src="fone.png" alt="avçd" width="55px" height="60px"/>
+            </div>
+        </div>
+
+        <div class="moeda"><br> <br> <!--gif de moeda para decoração e tamanho-->
+          <img src="moeda.gif" width="100" height="100"> <br> <br>
+      </div><br>
+
+    </body>

@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="cadastro.css" media="screen"/>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title> Cadastro</title>
+
+        </head>
+    
+    <body>
+        <form>
+          
+            <div class="imgfundo">
+                <img src="fundo.jpeg" width="1348" height="1050">
+            </div>
+
+            <div class="logo">
+                <img src = "logo.png" width="280" height="200">  
+             </div>
+
+            <h2> <strong>Digite suas informações</strong></h2> 
+
+            <fieldset style = "width: 470px; height: 600px; margin: auto;">
+
+            <div class = "informaçoes"> <br>
+                
+                <label for = "nome"><strong> Nome completo: </strong></label> <br>
+                <input type = "text" name = "name" id="nome" required>
+
+            <br><br>
+
+                <label for = "nascimento"><strong> Data de Nascimento: </strong></label> <br>
+                <input type = "date" name = "Data de nascimento" id = "nascimento">
+
+            <br><br>
+
+                <label for = "escolaridade"><strong>Qual seu grau de escolaridade? </strong></label> <br>
+                <input list = "escolaridade"> <datalist id = "escolaridade">
+                    <option value="Cursando o 1º do Ensino Medio">
+                    <option value="Cursando o 2º do Ensino Medio">
+                    <option value="Cursando o 3º do Ensino Medio">
+                    <option value="Cursando Ensino Medio + Curso Tecnico">
+                    </datalist>
+
+            <br><br>
+
+                <label for = "xp"><strong>Você teve algum contato com Educação Financeira? </strong></label> <br>
+                <label for="sim">
+                    <input type="radio" name="devweb" value = "sim" > Sim <br>
+                    <input type = "radio" name = "devweb" value = "não"> Não
+                </label>
+    
+            <br><br>
+           
+                <label for = "email"><strong> E-mail (você usará o mesmo durante todo o curso):<br>
+                <input type = "email" name = "E-mail" id = "email" required>
+    
+            <br><br>
+   
+                <label for = "senha"><strong> Senha (minimo de 6 caracteres):<br>
+                <input type = "password" name = "senha" id = "senha" required >
+            
+            <br><br> 
+    
+                <label for = "politica"><strong>Esse site está de acordo com a Lei Geral de Proteção de Dados Pessoais. 
+                <a href="https://www.gov.br/cidadania/pt-br/acesso-a-informacao/lgpd">(LGPD)</a> </strong></label> 
+                    
+            <br>
+
+             <div class="moeda">
+                 <img src="moeda.gif" width="100" height="100">
+             </div><br>
+
+           <button input class="bt" type="submit"> <strong>Concluir</strong> 
+
+            </fieldset>
+
+            

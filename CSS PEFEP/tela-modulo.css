@@ -1,0 +1,217 @@
+body{display: flex;
+    flex-direction: column;
+    margin:0px;
+    font-family:'Signika', sans-serif;}
+  
+    /*imagem de fundo*/
+  .imgfundo {position: fixed;
+      background: url(fundo.jpeg);
+      opacity: 0.2;}
+  
+    /*imagem de logo*/  
+  .logo {padding-top: 30px;
+       position: absolute;
+       margin-left: 550px;} 
+  
+       /*titulo*/
+  h1{ font-size: 40px; 
+      text-align: center;
+      margin-left: 590px;
+      margin-top: 400px;
+      position:absolute;}  
+        
+      /*barra decorativa colorida em baixo do titulo*/
+  h1:after {content:'';
+            width: auto; display: block;
+            position: relative;
+            height: 4px; 
+            background:-webkit-linear-gradient(right,rgba(147,184,189,0)
+            0%,rgba(4, 236, 81, 0.8)
+            20%,rgb(4, 196, 106)
+            53%,rgba(40, 156, 172, 0.8)
+            79%,rgba(147,184,189,0) 100%);}
+  
+  /* configurações dos links */
+  a {color: black;
+    text-decoration: none;}        
+  a:visited {text-decoration: none;}     /*como o link ficará depois de ser clicado*/       
+  
+  /*barra que se encontra o menu principal*/
+  nav {width: 1100px; height: 70px;
+    display: flex;
+    align-items: center;
+    border-radius:5px;
+    margin-left: 0px;
+    margin-top: 280px;
+    border-width: thick;
+    background-color:whitesmoke;
+    box-shadow:0px 0px 2em rgba(50, 50, 50, 0.9);}
+  
+    /*lista do menu principal*/
+  ul{ text-align: center;
+    border-radius:5px;
+    padding-left: 190px;
+    position: absolute;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height: 600px;
+    max-width: 1000px;
+    margin:0px;
+    font-size: 18px;
+    font-family:'Signika', sans-serif;}
+  
+  /*itens da lista*/
+  li {padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase; /*letras em maiusculo*/
+  cursor: pointer;
+  color: #ebebeb;
+  min-width: 80px;
+  margin: auto;}
+  
+  li:hover { /*itens da lista ao passar o mouse em cima*/
+  background-color:#23a543;
+  border-radius: 10px;         
+  background-size: 100% 100%;
+  color: black;
+  animation: spring 200ms ease-out;} /*fazendo uma animação na transição do normal pro hover*/
+  
+  li:active {transform: translateY(4px);}
+  
+  /*aba de perfil*/ 
+  .menulateral{ z-index: 3;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 550px;
+    width: 400px;
+    margin-top: 20px; padding-top: 15px;
+    margin-left: 20px; padding-left: 40px;
+    background:whitesmoke;
+    transition: all 0.6s ease-in-out;
+    box-shadow: 0 0 13px black;}
+  
+    /*subtitulo da aba de perfil*/
+  h3 {font-size: 18px;
+    margin-top: 10px;}
+    
+    /*quadro das informações na aba de perfil*/
+  fieldset {width: 300px;
+    height: 330px;
+    border-radius: 10px;
+    border-style:groove;
+    border-width: 3px;
+    border-color: #038518;
+    font-family:'Signika', sans-serif;
+    font-size: 15px;}
+  
+  /* aparecendo a aba lateral */
+  #menucheck:checked ~ .menulateral{right:0;}
+  
+  /*artezinha e config das barrinhas pra abrir o menu*/ 
+  .menu-btn{z-index: 6;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;}
+  .menu-btn span, .menu-btn:before, .menu-btn:after{
+      content: "";
+      z-index: 6;
+      position: absolute;
+      top: calc(50% - 1px);
+      left: 30%;
+      width: 40%;
+      border-bottom: 2px solid #000;
+      transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);}
+  .menu-btn:before{
+    transform: translateY(-8px);}
+  .menu-btn:after{
+    transform: translateY(8px);}
+   
+   /*botão de fechar*/ 
+  .close {
+      z-index: 6;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      transition: background .6s;}
+  
+  /* artezinha do botão de fechar a aba (X) */
+  #menucheck:checked + .menu-btn span {transform: scaleX(0);}
+  #menucheck:checked + .menu-btn:before {
+      transform: rotate(45deg);
+    border-color: black;}
+  #menucheck:checked + .menu-btn:after {
+      transform: rotate(-45deg);
+    border-color: black;}
+
+  #menucheck{opacity: 0;} /*deixando invisivel o checkbox de aba de perfil*/
+  
+
+    /* Cards */
+.bloco {width: 1300px;
+    word-wrap:break-word;
+    margin-top: 500px;
+    position: absolute;
+    justify-content: center;
+    align-items: justify;}  
+
+    /* configurações padronizadas dos cards*/
+.card { border-radius: 5px;z-index: 4;
+      display: inline-block;
+      box-shadow: 13px 13px 13px 0px rgba(50, 50, 50, 0.22);
+      width: 350px;
+      height: 200px;
+      margin-top: 20px;
+      margin-left: 70px;
+      background-color: whitesmoke;
+      transition: all 0.2s ease-out;}   
+
+  /*cards ao colocar o cursor do mouse em cima  */    
+  .card:hover {transform: translateY(-5px); /*velocidade que o card irá de "levantar" */
+      cursor: pointer;}
+     
+  /* titulos dos cards*/
+  .card h3 {margin-top: 10px;
+      text-align: center;
+  font-size: 25px;} 
+      
+  /* textos de informações dos cards*/
+  .card p {text-align:left;
+      margin-left: 20px;
+      color: #a3a5ae;
+      font-size: 16px;}
+
+/* imagens dos cards*/
+.medalhas{float: right;
+      padding-top: 10px;
+      padding-right: 10px;}
+
+    /* bordas dos cards*/
+    .blue {border-left: 4px solid #4895ff; 
+      border-top: 3px solid #4895ff;}
+     
+    .green {border-left: 4px solid #3bb54a;
+      border-top: 3px solid #3bb54a;}
+     
+    .red {border-left: 4px solid red;
+      border-top: 3px solid red;}  
+      
+    .black {border-left: 4px solid #000000;
+          border-top: 3px solid #000000;}
+         
+    .grey {border-left: 4px solid rgb(108, 109, 114);
+          border-top: 3px solid rgb(108, 109, 114);}    
+
+ /* moeda decorativa */
+ .moeda {position: relative;
+          margin-left: 650px;
+          margin-top: 300px;} 
+    
